@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Djoufson Che",
+  "classifications": [
+    "Web",
+    "Blazor",
+    "WebAssembly",
+    "Tailwindcss"
+  ],
+  "identity": "Blazorssr.Starter.Kit",
+  "name": "BlazorSSR Starter Kit",
+  "description": "BlazorSSR boilerplate template including Tailwindcss",
+  "shortName": "blazorssr",
+  "sourceName": "BlazorSSR.Starter.Kit",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "framework": {
+      "type": "parameter",
+      "defaultValue": "net8.0",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0"
+        },
+        {
+          "choice": "net7.0"
+        },
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "description": "The .NET Framework version",
+      "replaces": "{TargetFramework}"
+    }
+  },
+  "preferNameDirectory": true
+}
