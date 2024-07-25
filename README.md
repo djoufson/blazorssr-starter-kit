@@ -1,5 +1,7 @@
 # Blazor SSR Starter Kit
 
+Find the repository at this link [nuget.org/packages/BlazorSSR.Starter.Kit](https://www.nuget.org/packages/BlazorSSR.Starter.Kit/)
+
 This repository serves as a starter kit for Blazor SSR projects using .NET 8. It provides a basic setup and structure to kickstart your Blazor SSR development journey.
 
 ## Features
@@ -13,16 +15,22 @@ This repository serves as a starter kit for Blazor SSR projects using .NET 8. It
 
 To get started with this starter kit, follow these steps:
 
-1. Clone this repository.
-2. Open the project in your preferred IDE.
-3. Build and run the project.
+### 1. Install the template using `dotnet new`
 
-For detailed instructions on setting up your development environment and building your first Blazor SSR app, refer to the documentation.
+```sh
+dotnet new install BlazorSSR.Starter.Kit
+```
 
-## Contributing
+You should see the template in the list of templates from `dotnet new list` after this installs successfully. Look for "BlazorSSR Starter Kit" with Short Name of `"blazorssr"`.
 
-Contributions are welcome! Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines.
+### 2. Create your project based on the template with the cli
 
-## License
+Navigate to the parent directory in which you'd like the solution's folder to be created.
 
-This project is licensed under the [MIT License](./LICENCE).
+Run this command to create the solution structure in a subfolder name Your.ProjectName:
+
+```sh
+dotnet new blazorssr -o Your.ProjectName
+```
+
+The Your.ProjectName directory and solution file will be created, and inside that will be all of your new solution contents, properly namespaced and ready to run.
